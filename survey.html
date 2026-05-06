@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>AI Use Survey</h1>
+        <p>A small survey about how people use AI.</p>
+    </header>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tools.html">How to Use AI</a>
+        <a href="ai-links.html">AI Websites</a>
+        <a href="survey.html">AI Survey</a>
+    </nav>
+
+
+    <main>
+        <section class="box">
+            <h2>Tell Us About Your AI Use</h2>
+
+            <form id="aiForm">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name">
+
+                <p>How often do you use AI?</p>
+                <input type="radio" id="often" name="use" value="often">
+                <label for="often">Often</label><br>
+
+                <input type="radio" id="sometimes" name="use" value="sometimes">
+                <label for="sometimes">Sometimes</label><br>
+
+                <input type="radio" id="rarely" name="use" value="rarely">
+                <label for="rarely">Rarely</label><br>
+
+                <p>What do you use AI for?</p>
+                <input type="checkbox" id="writing" value="writing">
+                <label for="writing">Writing</label><br>
+
+                <input type="checkbox" id="coding" value="coding">
+                <label for="coding">Coding</label><br>
+
+                <input type="checkbox" id="studying" value="studying">
+                <label for="studying">Studying</label><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset" onclick="clearResult()">Reset</button>
+            </form>
+
+            <p id="result">Your result will show here.</p>
+            <button onclick="showTip()">Show AI Tip</button>
+            <p id="tip"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Simple AI Survey</p>
+    </footer>
+</body>
+</html>
